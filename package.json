@@ -1,6 +1,6 @@
 {
   "name": "ractive-express",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "express.js support for Ractive.js, including partials, components and caching, as called for by Ractive.js author MartinKolarik : https://github.com/ractivejs/ractive/issues/538",
   "main": "lib/index.js",
   "scripts": {
@@ -23,6 +23,7 @@
   "dependencies": {
     "async": "^0.9.0",
     "lodash": "^2.4.1",
-    "ractive": "^0.4.0"
+    "ractive": "^0.4.0",
+    "httpinvoke": "^1.1.3"
   }
 }
