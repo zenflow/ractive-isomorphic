@@ -1,7 +1,7 @@
 {
   "name": "ractive-express",
-  "version": "0.0.2",
-  "description": "express.js support for Ractive.js, including partials, components and caching, as called for by Ractive.js author MartinKolarik : https://github.com/ractivejs/ractive/issues/538",
+  "version": "0.0.3",
+  "description": "express.js support for Ractive.js, including partials, components and caching, as called for by Ractive.js author MartinKolarik https://github.com/ractivejs/ractive/issues/538 Supports server- and client- side rendering and binding of a common set of ractive components via browserify. ",
   "main": "lib/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

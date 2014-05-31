@@ -1,3 +1,2 @@
-redesign client-side API be more flexible
-    allow for binding individual components to elements, including the root document
-express middleware for serving components (ie, context.attach([app|app.route('/somethin')], ...))
+documentation
+    link to example project
