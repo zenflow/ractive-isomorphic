@@ -1,6 +1,6 @@
 {
   "name": "ractive-express",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Web 2.0 viewmodel framework powered by Ractive.js.",
   "main": "lib/index.js",
   "scripts": {
