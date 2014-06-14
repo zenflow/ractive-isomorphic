@@ -1,4 +1,12 @@
 ractive-express
 ===============
 
-express.js support for Ractive.js, including partials, components and caching, as called for by Ractive.js author MartinKolarik https://github.com/ractivejs/ractive/issues/538 Supports server- and client- side rendering and binding of a common set of ractive components via browserify.
+Web 2.0 viewmodel framework powered by Ractive.js.
+
+Supports server- and client- side rendering and binding of a common set of Ractive viewmodel components via browserify.
+
+Compatible with express or any express-based server framework that lets you decide the view engine, i.e. sails or keystone
+
+Optional routing feature exposes route as a writeable and observable property of a component and carries out routing client and/or server-side
+
+For an example, see ractive-express-demo [source](https://github.com/zenflow/ractive-express-demo)

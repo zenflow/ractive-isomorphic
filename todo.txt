@@ -1,2 +1,11 @@
+let viewmodel module handle fetching template
+    - server template can be composed of (html head, client template as partial, and scripts)
+    - makes binding whole page nicer since we dont need context.bindPage
+http response 404 and 5xx
+async component initialization
+    ractive.js:7478 & 7484 bug fix
+    'ready' event convention?
+a better way of loading viewmodel 'modules', that supports cache control AND error tracing
 documentation
     link to example project
+
