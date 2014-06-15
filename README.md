@@ -9,4 +9,4 @@ Compatible with express or any express-based server framework that lets you deci
 
 Optional routing feature exposes route as a writeable and observable property of a component and carries out routing client and/or server-side
 
-For an example, see ractive-express-demo [source](https://github.com/zenflow/ractive-express-demo)
+For an example, see [ractive-express-demo](http://ractive-express-demo.matthewbrunetti.com/) ([source](https://github.com/zenflow/ractive-express-demo))
