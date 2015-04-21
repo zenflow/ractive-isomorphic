@@ -1,21 +1,15 @@
 var gulp = require('gulp');
 var del = require('del');
+var _ = require('lodash');
+var package_json = require('./package.json');
 var browserify = require('browserify');
 var source = require('vinyl-source-stream');
 var buffer = require('vinyl-buffer');
 var sourcemaps = require('gulp-sourcemaps');
 var nodemon = require('gulp-nodemon');
 
-var browserify_transforms = [
-	'brfs'
-];
-var browserify_node_modules = [
-	'lodash',
-	'ractive',
-	'es6-promise',
-	'obs-router',
-	'waitr'
-];
+var browserify_transforms = ['brfs'];
+var browserify_node_modules = _.keys(package_json.dependencies); // all package dependancies for now
 
 var cleaned = false;
 gulp.task('clean', function (done) {
@@ -61,10 +55,11 @@ gulp.task('assets', ['clean'], function(){
 gulp.task('build', ['scripts', 'assets']);
 
 gulp.task('watch', ['build'], function() {
-	gulp.watch(['./lib/**', './test/client/src/scripts/**'], ['scripts:index']);
+	gulp.watch(['./lib/**', './test/shared/**', './test/client/src/scripts/**'], ['scripts:index']);
+	gulp.watch(['./test/client/src/assets/**'], ['assets']);
 });
 
-gulp.task('serve', ['watch'], function(cb){
+gulp.task('test', ['watch'], function(cb){
 	nodemon({
 		script: 'test/server/index.js',
 		ext: 'js html',
@@ -72,4 +67,4 @@ gulp.task('serve', ['watch'], function(cb){
 	});
 });
 
-gulp.task('default', ['serve']);
+gulp.task('default', ['test']);

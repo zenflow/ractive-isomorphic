@@ -26,13 +26,14 @@
   },
   "homepage": "https://github.com/zenflow/ractive-express",
   "dependencies": {
-    "es6-promise": "^2.0.1",
     "lodash": "^3.6.0",
     "obs-router": "0.0.6",
-    "ractive": "^0.7.1",
-    "waitr": "0.0.5"
+    "on-client": "^1.0.0",
+    "ractive": "^0.7.2",
+    "waitr": "0.0.7"
   },
   "devDependencies": {
+    "es6-promise": "^2.0.1",
     "brfs": "^1.4.0",
     "browserify": "^9.0.4",
     "connect": "^3.3.5",
@@ -45,7 +46,5 @@
     "vinyl-buffer": "^1.0.0",
     "vinyl-source-stream": "^1.1.0"
   },
-  "browser": {
-    "lib/RactiveExpress.js": "lib/RactiveExpress.client.js"
-  }
+  "browser": {}
 }

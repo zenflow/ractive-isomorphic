@@ -1,2 +1,4 @@
 // test/client/src/scripts/index.js
-console.log('yay');
+var ViewModel = require('../../../shared/ViewModel');
+var api = require('../../../shared/api');
+window.vm = ViewModel.client({api: api});
