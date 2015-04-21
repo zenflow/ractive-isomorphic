@@ -1,0 +1,15 @@
+ul.navbar {
+    display: flex;
+    width: 100%;
+}
+ul.navbar > li {
+    flex: 1;
+    border: 1px solid black;
+}
+ul.navbar > li.active {
+    background-color: green;
+    font-weight: bold;
+}
+.waiting {
+    background-color: lightsteelblue;
+}

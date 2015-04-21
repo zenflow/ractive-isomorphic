@@ -1,0 +1,5 @@
+reset root.get('title') and root.get('status-code') before each route firing
+sync root.get('title') with document title
+insert something cool for an api
+minimal style
+readme.md & git merge with master & npm publish

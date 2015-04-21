@@ -1,0 +1,18 @@
+<h1>ractive-express test</h1>
+<ul class="navbar">
+    <li class="{{route=='home'?'active':''}}">
+        <a href="{{getUrl('home')}}" on-click="route-link">
+            home
+        </a>
+    </li>
+    <li class="{{route=='a'?'active':''}}">
+        <a href="{{getUrl('a')}}" on-click="route-link">
+            a
+        </a>
+    </li>
+    <li class="{{route=='b'?'active':''}}">
+        <a href="{{getUrl('b')}}" on-click="route-link">
+            b
+        </a>
+    </li>
+</ul>
