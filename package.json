@@ -30,7 +30,7 @@
     "obs-router": "0.0.7",
     "on-client": "^1.0.0",
     "ractive": "^0.7.2",
-    "waitr": "0.0.7"
+    "waitr": "0.0.8"
   },
   "devDependencies": {
     "es6-promise": "^2.0.1",
