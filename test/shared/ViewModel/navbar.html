@@ -1,18 +1,17 @@
-<h1>ractive-express test</h1>
 <ul class="navbar">
-    <li class="{{route=='home'?'active':''}}">
-        <a href="{{getUrl('home')}}" on-click="route-link">
-            home
+    <li class="{{route=='Home'?'active':''}}">
+        <a href="{{getUrl('Home')}}" on-click="route-link">
+            Home
         </a>
     </li>
-    <li class="{{route=='a'?'active':''}}">
-        <a href="{{getUrl('a')}}" on-click="route-link">
-            a
+    <li class="{{route=='HalfInput'?'active':''}}">
+        <a href="{{getUrl('HalfInput')}}" on-click="route-link">
+            HalfInput
         </a>
     </li>
-    <li class="{{route=='b'?'active':''}}">
-        <a href="{{getUrl('b')}}" on-click="route-link">
-            b
+    <li class="{{route=='RandomNumber'?'active':''}}">
+        <a href="{{getUrl('RandomNumber')}}" on-click="route-link">
+            RandomNumber
         </a>
     </li>
 </ul>

@@ -1,0 +1,8 @@
+<!-- reading directly from params.* keypath -->
+<h3>RandomNumber</h3>
+<p>
+    {{params.number}}
+    <a href="{{getUrl(route, {number: next_number})}}" on-click="route-link">
+        {{params.number?'...again':'View a random number...'}}
+    </a>
+</p>

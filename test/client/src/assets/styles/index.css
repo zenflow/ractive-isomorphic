@@ -1,15 +1,40 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+body {
+    text-align: center;
+    font-size: 1.7em
+}
+h1 {
+    text-align: left;
+    padding: 0 112px 0 24px;
+}
+img.loading {
+    position: absolute;
+    right: 24px;
+}
 ul.navbar {
     display: flex;
     width: 100%;
+    list-style: none;
+    padding-left: 0;
 }
 ul.navbar > li {
     flex: 1;
-    border: 1px solid black;
+    padding: 8px;
+    margin: 8px;
+    border-radius: 8px;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+}
+ul.navbar > li > a {
+    display: inline-block;
+    width: 100%;
 }
 ul.navbar > li.active {
     background-color: green;
-    font-weight: bold;
 }
-.waiting {
-    background-color: lightsteelblue;
+ul.navbar > li.active > a {
+    color: white;
 }

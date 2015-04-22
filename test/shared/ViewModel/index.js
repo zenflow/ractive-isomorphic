@@ -1,26 +1,13 @@
 var fs = require('fs');
 var path = require('path');
-//var _ = require('lodash');
 var RactiveExpress = require('../../../lib/RactiveExpress');
 
-var Home = require('./Home');
+// disable ractive debug messages in log
+RactiveExpress.Ractive.DEBUG = false;
 
-var A = RactiveExpress.Page.extend({
-	name: 'a',
-	url: '/a',
-	template: '<h4>Allo</h4>',
-	onroute: function(params, is_init){
-		console.log('onroute a');
-	}
-});
-var B = RactiveExpress.Page.extend({
-	name: 'b',
-	url: '/b',
-	template: '<h4>Bonjour</h4>',
-	onroute: function(params, is_init){
-		console.log('onroute b');
-	}
-});
+var Home = require('./Home');
+var HalfInput = require('./HalfInput');
+var RandomNumber = require('./RandomNumber');
 
 var document_html = fs.readFileSync(path.join(__dirname, 'document.html'), 'utf8');
 var body_html = fs.readFileSync(path.join(__dirname, 'body.html'), 'utf8');
@@ -29,15 +16,28 @@ var navbar_html = fs.readFileSync(path.join(__dirname, 'navbar.html'), 'utf8');
 var ViewModel = RactiveExpress.extend({
 	documentTemplate: document_html,
 	bodyTemplate: body_html,
-	pages: [Home, A, B],
+	pages: [Home, HalfInput, RandomNumber],
 	partials: {
 		navbar: navbar_html
 	},
+	data: {
+		loading_opacity: 0
+	},
 	onroute: function(route, params, is_initial) {
 		var self = this;
+
 		//self.root.set('status-code', 404); 		// ***
 		//self.root.set('title', 'dynamically set title');  // ***
-		console.log('onroute!');
+
+		console.log('master onroute', route, params, is_initial);
+
+		if(self.on_client && !is_initial){ // !is_initial is only possible on_client anyways
+			self.waitr.wait()();
+			self.animate('loading_opacity', 1, {easing: 'easeInOut'});
+			self.waitr.once('ready', function(){
+				self.animate('loading_opacity', 0, {easing: 'easeInOut'});
+			});
+		}
 	}
 });
 
