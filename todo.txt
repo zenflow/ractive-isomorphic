@@ -9,7 +9,12 @@ npm dashboard example
 reset root.get('title') and root.get('status-code') before each route firing
 sync root.get('title') with document title
 factor out ractive-isomorphic
-readme.md & git merge with master & npm publish
+publish
+    'ractive-isomorphic' logo favicon.ico & favicon.svg
+    write readme.md
+    jsdoc?
+    git merge with master
+    npm publish
 
 -------
 support redirects
