@@ -17,7 +17,7 @@ gulp.task('clean', function (done) {
 		done();
 	} else {
 		cleaned = true;
-		del(['test/client/build'], done);
+		del(['sandbox/client/build'], done);
 	}
 });
 
@@ -31,11 +31,11 @@ gulp.task('scripts:node_modules', ['clean'], function () {
 		.pipe(buffer())
 		.pipe(sourcemaps.init({loadMaps: true}))
 		.pipe(sourcemaps.write('./'))
-		.pipe(gulp.dest('./test/client/build/scripts'))
+		.pipe(gulp.dest('./sandbox/client/build/scripts'))
 });
 
 gulp.task('scripts:index', ['clean'], function () {
-	var b = browserify('./test/client/src/scripts/index.js', {debug: true})
+	var b = browserify('./sandbox/client/src/scripts/index.js', {debug: true})
 		.external(browserify_node_modules)
 		.transform(browserify_transforms);
 	return b.bundle()
@@ -43,28 +43,28 @@ gulp.task('scripts:index', ['clean'], function () {
 		.pipe(buffer())
 		.pipe(sourcemaps.init({loadMaps: true}))
 		.pipe(sourcemaps.write('./'))
-		.pipe(gulp.dest('./test/client/build/scripts'));
+		.pipe(gulp.dest('./sandbox/client/build/scripts'));
 });
 
 gulp.task('scripts', ['scripts:node_modules', 'scripts:index']);
 
 gulp.task('assets', ['clean'], function(){
-	return gulp.src('./test/client/src/assets/**')
-		.pipe(gulp.dest('./test/client/build'));
+	return gulp.src('./sandbox/client/src/assets/**')
+		.pipe(gulp.dest('./sandbox/client/build'));
 });
 gulp.task('build', ['scripts', 'assets']);
 
 gulp.task('watch', ['build'], function() {
-	gulp.watch(['./lib/**', './test/shared/**', './test/client/src/scripts/**'], ['scripts:index']);
-	gulp.watch(['./test/client/src/assets/**'], ['assets']);
+	gulp.watch(['./lib/**', './sandbox/shared/**', './sandbox/client/src/scripts/**'], ['scripts:index']);
+	gulp.watch(['./sandbox/client/src/assets/**'], ['assets']);
 });
 
-gulp.task('test', ['watch'], function(cb){
+gulp.task('sandbox', ['watch'], function(cb){
 	nodemon({
-		script: 'test/server/index.js',
+		script: 'sandbox/server/index.js',
 		ext: 'js html',
-		ignore: ['test/client/**', 'gulpfile.js']
+		ignore: ['sandbox/client/**', 'gulpfile.js']
 	});
 });
 
-gulp.task('default', ['test']);
+gulp.task('default', ['sandbox']);
