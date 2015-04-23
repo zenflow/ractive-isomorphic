@@ -2,7 +2,7 @@
   "name": "ractive-express",
   "version": "0.2.0",
   "description": "Isomorphic Web 2.0 viewmodel framework powered by Ractive.js.",
-  "main": "lib/RactiveExpress.js",
+  "main": "lib/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -33,7 +33,6 @@
     "waitr": "0.0.8"
   },
   "devDependencies": {
-    "es6-promise": "^2.0.1",
     "brfs": "^1.4.0",
     "browserify": "^9.0.4",
     "connect": "^3.3.5",

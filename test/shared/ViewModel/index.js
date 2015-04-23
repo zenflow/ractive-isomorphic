@@ -1,6 +1,6 @@
 var fs = require('fs');
 var path = require('path');
-var RactiveExpress = require('../../../lib/RactiveExpress');
+var RactiveExpress = require('../../../lib');
 
 // disable ractive debug messages in log
 RactiveExpress.Ractive.DEBUG = false;
@@ -29,13 +29,13 @@ var ViewModel = RactiveExpress.extend({
 		//self.root.set('status-code', 404); 		// ***
 		//self.root.set('title', 'dynamically set title');  // ***
 
-		console.log('master onroute', route, params, is_initial);
+		console.log('main vm onroute', route, params, is_initial);
 
-		if(self.on_client && !is_initial){ // !is_initial is only possible on_client anyways
+		if(self.on_client){
 			self.waitr.wait()();
-			self.animate('loading_opacity', 1, {easing: 'easeInOut'});
+			self.animate('loading_opacity', 1, {easing: 'easeIn', duration: 100});
 			self.waitr.once('ready', function(){
-				self.animate('loading_opacity', 0, {easing: 'easeInOut'});
+				self.animate('loading_opacity', 0, {easing: 'easeIn', duration: 100});
 			});
 		}
 	}

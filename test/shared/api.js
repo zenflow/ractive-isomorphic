@@ -1,4 +1,4 @@
-var Promise = require('es6-promise').Promise;
+var Promise = require('../../lib').Promise;
 var _ = require('lodash');
 var _delay = 500;
 module.exports = {

@@ -1,11 +1,8 @@
 rename test -> sandbox
-require('es6-promise') -> require('Ractive').Promise
 remove plugin collection from this repo
     - publish Ractive.transitions.slidehorizontal /w gh-pages
 npm dashboard example
     - factor out 'npm-api'(?) before publishing
-
---waitr: extend waitr.extend to support node-style callbacks by identifying fn.toString().match(/function(...cb){...}/)
 reset root.get('title') and root.get('status-code') before each route firing
 sync root.get('title') with document title
 factor out ractive-isomorphic
@@ -16,7 +13,7 @@ publish
     git merge with master
     npm publish
 
--------
-support redirects
+two separate waitrs? - one for whole vm readiness, one for route readiness?
+support 302 redirects
 manage page transitions
 throw error if user forgets to call self._super() in onconstruct, onconfig, oninit, onteardown
