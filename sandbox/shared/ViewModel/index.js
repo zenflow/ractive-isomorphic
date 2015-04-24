@@ -38,6 +38,15 @@ var ViewModel = RactiveExpress.extend({
 				self.animate('loading_opacity', 0, {easing: 'easeIn', duration: 100});
 			});
 		}
+	},
+	oninit: function(){
+		var self = this;
+		if(self.on_client) {
+			self.set('delay', self.api.getDelay() / 1000);
+			self.observe('delay', function (delay) {
+				self.api.setDelay(delay * 1000);
+			}, {init: false});
+		}
 	}
 });
 

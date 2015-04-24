@@ -38,3 +38,10 @@ ul.navbar > li.active {
 ul.navbar > li.active > a {
     color: white;
 }
+
+div.delay-input {
+    display: inline-block;
+    position: absolute;
+    right: 8px;
+    bottom: 8px;
+}
