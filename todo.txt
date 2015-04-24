@@ -1,10 +1,3 @@
-rename test -> sandbox
-remove plugin collection from this repo
-    - publish Ractive.transitions.slidehorizontal /w gh-pages
-npm dashboard example
-    - factor out 'npm-api'(?) before publishing
-reset root.get('title') and root.get('status-code') before each route firing
-sync root.get('title') with document title
 factor out ractive-isomorphic
 publish
     'ractive-isomorphic' logo favicon.ico & favicon.svg
@@ -13,6 +6,7 @@ publish
     git merge with master
     npm publish
 
+throw error if use_data_script && !window._vm_data
 two separate waitrs? - one for whole vm readiness, one for route readiness?
 support 302 redirects
 manage page transitions

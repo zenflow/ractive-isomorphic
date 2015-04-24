@@ -21,12 +21,11 @@ var ViewModel = RactiveExpress.extend({
 		navbar: navbar_html
 	},
 	data: {
-		loading_opacity: 0
+		loading_opacity: 0,
+		title: 'ractive-express sandbox'
 	},
 	onroute: function(route, params, is_initial) {
 		var self = this;
-		//self.root.set('status-code', 404); 		// ***
-		//self.root.set('title', 'dynamically set title');  // ***
 		console.log('ViewModel onroute', route, params, is_initial);
 		if(self.on_client){
 			self.waitr.wait()();

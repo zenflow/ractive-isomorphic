@@ -11,13 +11,15 @@ var HalfInput = GenericPage.extend({
 	onroute: function(params, is_initial){
 		var self = this;
 		self._super.apply(self, arguments);
+		self.root.set('title', self.name + ' / ' + self.root.get('title'));
 		var number = Number(params.number || 0);
 		self.set({
 			number: number,
 			half: '?'
 		});
-		self.api.half(number).then(function(half){
+		self.api.half(number).then(function(half) {
 			self.set({half: half});
+			self.root.set({'status-code': 404});
 		});
 	},
 	oninit: function(){
