@@ -1,9 +1,9 @@
 var fs = require('fs');
 var path = require('path');
-var RactiveExpress = require('../../../lib/RactiveExpress');
+var GenericPage = require('./GenericPage');
 var template = fs.readFileSync(path.join(__dirname, 'Home.html'), 'utf8');
 
-var Home = RactiveExpress.Page.extend({
+var Home = GenericPage.extend({
 	name: 'Home',
 	url: '/',
 	template: template

@@ -1,15 +1,16 @@
 var fs = require('fs');
 var path = require('path');
-var RactiveExpress = require('../../../lib/RactiveExpress');
+var GenericPage = require('./GenericPage');
 var template = fs.readFileSync(path.join(__dirname, 'HalfInput.html'), 'utf8');
 
-var HalfInput = RactiveExpress.Page.extend({
+var HalfInput = GenericPage.extend({
 	name: 'HalfInput',
 	url: '/half(/:number)',
 	template: template,
 	twoway: false,
 	onroute: function(params, is_initial){
 		var self = this;
+		self._super.apply(self, arguments);
 		var number = Number(params.number || 0);
 		self.set({
 			number: number,

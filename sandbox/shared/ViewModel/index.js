@@ -25,12 +25,9 @@ var ViewModel = RactiveExpress.extend({
 	},
 	onroute: function(route, params, is_initial) {
 		var self = this;
-
 		//self.root.set('status-code', 404); 		// ***
 		//self.root.set('title', 'dynamically set title');  // ***
-
-		console.log('main vm onroute', route, params, is_initial);
-
+		console.log('ViewModel onroute', route, params, is_initial);
 		if(self.on_client){
 			self.waitr.wait()();
 			self.animate('loading_opacity', 1, {easing: 'easeIn', duration: 100});
@@ -41,6 +38,7 @@ var ViewModel = RactiveExpress.extend({
 	},
 	oninit: function(){
 		var self = this;
+		self._super.apply(self, arguments);
 		if(self.on_client) {
 			self.set('delay', self.api.getDelay() / 1000);
 			self.observe('delay', function (delay) {
