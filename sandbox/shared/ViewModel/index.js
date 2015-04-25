@@ -39,9 +39,9 @@ var ViewModel = RactiveExpress.extend({
 		var self = this;
 		self._super.apply(self, arguments);
 		if(self.on_client) {
-			self.set('delay', self.api.getDelay() / 1000);
+			self.set('delay', self.api.getDelay());
 			self.observe('delay', function (delay) {
-				self.api.setDelay(delay * 1000);
+				self.api.setDelay(delay);
 			}, {init: false});
 		}
 	}

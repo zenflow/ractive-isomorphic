@@ -2,4 +2,7 @@
 <h1>ractive-express sandbox</h1>
 {{>navbar}}
 {{>content}}
-<div class="delay-input"><strong>Delay</strong><input type="number" step="0.25" value="{{delay}}" /> seconds</div>
+<div class="delay-input">
+    <label for="delay-input">api delay </label>
+    <input id="delay-input" type="number" step="250" value="{{delay}}" />
+</div>
