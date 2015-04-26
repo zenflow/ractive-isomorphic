@@ -9,7 +9,7 @@ var ViewModel = require('../shared/ViewModel');
 
 var app = connect();
 app.use(logger('dev'));
-app.use(ViewModel.server({api: api}));
+app.use(ViewModel.connect({api: api}));
 app.use(serveStatic(path.join(__dirname, '../client/build')));
 
 var server = http.createServer(app);
