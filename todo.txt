@@ -1,5 +1,5 @@
 write readme.md
-publish to npm & tweet @ractivejs
+publish to npm & deprecate ractive-express & tweet @ractivejs
 tests
 test in some other browsers (android, safari)
 add RactiveIsomorphic.koa()
