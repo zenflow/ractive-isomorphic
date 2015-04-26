@@ -12,6 +12,7 @@
   },
   "keywords": [
     "ractive",
+    "ractivejs",
     "express",
     "connect",
     "server",
@@ -22,7 +23,8 @@
     "view-model",
     "template",
     "rendering",
-    "binding"
+    "binding",
+    "seo"
   ],
   "author": "Matthew Francis Brunetti",
   "license": "MIT",

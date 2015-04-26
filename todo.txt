@@ -1,6 +1,8 @@
 write readme.md
+publish to npm & tweet @ractivejs
 tests
 test in some other browsers (android, safari)
+add RactiveIsomorphic.koa()
 two separate waitrs? - one for whole vm readiness, one for route readiness?
 support 302 redirects
 manage page transitions
