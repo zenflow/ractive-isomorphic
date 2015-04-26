@@ -1,0 +1,8 @@
+change to ractive-isomorphic
+use event bubbling instead of route-link proxy event
+write readme.md
+tests
+test in some other browsers (android, safari)
+two separate waitrs? - one for whole vm readiness, one for route readiness?
+support 302 redirects
+manage page transitions
