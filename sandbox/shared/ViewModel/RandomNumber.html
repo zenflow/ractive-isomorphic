@@ -2,7 +2,7 @@
 <h3>RandomNumber</h3>
 <p><strong>{{params.number}}</strong></p>
 <p style="visibility: {{next_number?'visible':'hidden'}}">
-    <a href="{{getUrl(route, {number: next_number})}}" on-click="route-link">
+    <a href="{{getUrl(route, {number: next_number})}}">
         {{params.number?'again!':'get a random number...'}}
     </a>
 </p>
