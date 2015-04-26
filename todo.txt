@@ -1,5 +1,4 @@
-make client() and server() use new vm 'ready' event
-factor out ractive-isomorphic
+change to ractive-isomorphic
 write readme.md
 tests
 test in some other browsers (android, safari)
