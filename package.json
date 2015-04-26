@@ -1,20 +1,25 @@
 {
-  "name": "ractive-express",
-  "version": "0.2.0",
-  "description": "Isomorphic Web 2.0 viewmodel framework powered by Ractive.js.",
+  "name": "ractive-isomorphic",
+  "version": "0.1.0",
+  "description": "Extended version of Ractive for creating a website viewmodel and implementing it on both client and server.",
   "main": "lib/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/zenflow/ractive-express"
+    "url": "https://github.com/zenflow/ractive-isomorphic"
   },
   "keywords": [
     "ractive",
     "express",
+    "connect",
+    "server",
+    "client",
+    "isomorphic",
     "view",
     "viewmodel",
+    "view-model",
     "template",
     "rendering",
     "binding"
@@ -22,24 +27,24 @@
   "author": "Matthew Francis Brunetti",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/zenflow/ractive-express/issues"
+    "url": "https://github.com/zenflow/ractive-isomorphic/issues"
   },
-  "homepage": "https://github.com/zenflow/ractive-express",
+  "homepage": "https://github.com/zenflow/ractive-isomorphic",
   "dependencies": {
-    "lodash": "^3.6.0",
+    "lodash": "^3.7.0",
     "obs-router": "0.0.7",
     "on-client": "^1.0.0",
-    "ractive": "^0.7.2",
+    "ractive": "^0.7.3",
     "waitr": "0.0.8"
   },
   "devDependencies": {
     "brfs": "^1.4.0",
-    "browserify": "^9.0.4",
+    "browserify": "^9.0.8",
     "connect": "^3.3.5",
     "del": "^1.1.1",
     "gulp": "^3.8.11",
     "gulp-nodemon": "^2.0.2",
-    "gulp-sourcemaps": "^1.5.1",
+    "gulp-sourcemaps": "^1.5.2",
     "morgan": "^1.5.2",
     "serve-static": "^1.9.2",
     "vinyl-buffer": "^1.0.0",

@@ -1,5 +1,5 @@
-var RactiveExpress = require('../../../lib');
-var GenericPage = RactiveExpress.Page.extend({
+var RactiveIsomorphic = require('../../../lib');
+var GenericPage = RactiveIsomorphic.Page.extend({
 	onroute: function(params, is_initial){
 		var self = this;
 		console.log('GenericPage onroute', params, is_initial);

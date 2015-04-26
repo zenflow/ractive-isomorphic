@@ -1,4 +1,3 @@
-change to ractive-isomorphic
 use event bubbling instead of route-link proxy event
 write readme.md
 tests

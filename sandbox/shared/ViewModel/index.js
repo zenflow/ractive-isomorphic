@@ -1,9 +1,9 @@
 var fs = require('fs');
 var path = require('path');
-var RactiveExpress = require('../../../lib');
+var RactiveIsomorphic = require('../../../lib');
 
 // disable ractive debug messages in log
-RactiveExpress.Ractive.DEBUG = false;
+RactiveIsomorphic.Ractive.DEBUG = false;
 
 var Home = require('./Home');
 var HalfInput = require('./HalfInput');
@@ -13,7 +13,7 @@ var document_html = fs.readFileSync(path.join(__dirname, 'document.html'), 'utf8
 var body_html = fs.readFileSync(path.join(__dirname, 'body.html'), 'utf8');
 var navbar_html = fs.readFileSync(path.join(__dirname, 'navbar.html'), 'utf8');
 
-var ViewModel = RactiveExpress.extend({
+var ViewModel = RactiveIsomorphic.extend({
 	//use_data_script: false,
 	documentTemplate: document_html,
 	bodyTemplate: body_html,
@@ -23,7 +23,7 @@ var ViewModel = RactiveExpress.extend({
 	},
 	data: {
 		loading_opacity: 0,
-		title: 'ractive-express sandbox'
+		title: 'ractive-isomorphic sandbox'
 	},
 	onroute: function(route, params, is_initial) {
 		var self = this;
