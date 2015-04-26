@@ -1,3 +1,4 @@
+rename RactiveIsomorphic/ViewModel -> Website
 write readme.md
 publish to npm & deprecate ractive-express & tweet @ractivejs
 tests
