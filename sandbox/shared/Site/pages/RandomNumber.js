@@ -1,9 +1,9 @@
 var fs = require('fs');
 var path = require('path');
-var GenericPage = require('./GenericPage');
+var Page = require('./Page');
 var template = fs.readFileSync(path.join(__dirname, 'RandomNumber.html'), 'utf8');
 
-var RandomNumber = GenericPage.extend({
+var RandomNumber = Page.extend({
 	name: 'RandomNumber',
 	url: '/random(/:number)',
 	template: template,

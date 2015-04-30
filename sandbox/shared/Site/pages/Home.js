@@ -1,9 +1,9 @@
 var fs = require('fs');
 var path = require('path');
-var GenericPage = require('./GenericPage');
+var Page = require('./Page');
 var template = fs.readFileSync(path.join(__dirname, 'Home.html'), 'utf8');
 
-var Home = GenericPage.extend({
+var Home = Page.extend({
 	name: 'Home',
 	url: '/',
 	template: template

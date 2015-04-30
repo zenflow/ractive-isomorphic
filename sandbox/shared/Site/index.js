@@ -1,33 +1,27 @@
 var fs = require('fs');
 var path = require('path');
-var RactiveIsomorphic = require('../../../lib');
+var ri = require('../../../lib');
+var documentTemplate = fs.readFileSync(path.join(__dirname, 'document.html'), 'utf8');
+var bodyTemplate = fs.readFileSync(path.join(__dirname, 'body.html'), 'utf8');
+var pages = require('./pages');
+var partials = require('./partials');
 
 // disable ractive debug messages in log
-RactiveIsomorphic.Ractive.DEBUG = false;
+ri.Ractive.DEBUG = false;
 
-var Home = require('./Home');
-var HalfInput = require('./HalfInput');
-var RandomNumber = require('./RandomNumber');
-
-var document_html = fs.readFileSync(path.join(__dirname, 'document.html'), 'utf8');
-var body_html = fs.readFileSync(path.join(__dirname, 'body.html'), 'utf8');
-var navbar_html = fs.readFileSync(path.join(__dirname, 'navbar.html'), 'utf8');
-
-var ViewModel = RactiveIsomorphic.extend({
+var Site = ri.Site.extend({
 	//use_data_script: false,
-	documentTemplate: document_html,
-	bodyTemplate: body_html,
-	pages: [Home, HalfInput, RandomNumber],
-	partials: {
-		navbar: navbar_html
-	},
+	documentTemplate: documentTemplate,
+	bodyTemplate: bodyTemplate,
+	pages: pages,
+	partials: partials,
 	data: {
 		loading_opacity: 0,
 		title: 'ractive-isomorphic sandbox'
 	},
 	onroute: function(route, params, is_initial) {
 		var self = this;
-		console.log('ViewModel onroute', route, params, is_initial);
+		console.log('Site onroute', route, params, is_initial);
 	},
 	oninit: function(){
 		var self = this;
@@ -37,7 +31,7 @@ var ViewModel = RactiveIsomorphic.extend({
 			self.set('delay', self.api.getDelay());
 			self.observe('delay', function (delay) {
 				self.api.setDelay(delay);
-			}, {init: false});
+			});
 
 			// loading animation
 			self.on('ready', function(){
@@ -50,4 +44,4 @@ var ViewModel = RactiveIsomorphic.extend({
 	}
 });
 
-module.exports = ViewModel;
+module.exports = Site;

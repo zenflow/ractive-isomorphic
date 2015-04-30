@@ -1,9 +1,8 @@
-rename RactiveIsomorphic/ViewModel -> Website
 write readme.md
 publish to npm & deprecate ractive-express & tweet @ractivejs
 tests
 test in some other browsers (android, safari)
-add RactiveIsomorphic.koa()
+add Website.koa()
 two separate waitrs? - one for whole vm readiness, one for route readiness?
 support 302 redirects
 manage page transitions

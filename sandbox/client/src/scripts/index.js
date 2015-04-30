@@ -1,3 +1,3 @@
-var ViewModel = require('../../../shared/ViewModel');
+var Site = require('../../../shared/Site');
 var api = require('../../../shared/api');
-window.vm = ViewModel.client({api: api});
+window.vm = Site.client({api: api});
