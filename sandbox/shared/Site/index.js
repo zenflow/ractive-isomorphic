@@ -19,9 +19,12 @@ var Site = ri.Site.extend({
 		loading_opacity: 0,
 		title: 'ractive-isomorphic sandbox'
 	},
-	onroute: function(route, params, is_initial) {
+	onconfig: function() {
 		var self = this;
-		console.log('Site onroute', route, params, is_initial);
+		self._super.apply(self, arguments);
+		self.on('ready', function(){console.log('Site ready');});
+		self.on('waiting', function(){console.log('Site waiting');});
+		self.on('route', function(route, params, is_initial) {console.log('Site route', route, params, is_initial);});
 	},
 	oninit: function(){
 		var self = this;

@@ -36,8 +36,7 @@
     "lodash": "^3.7.0",
     "obs-router": "0.0.7",
     "on-client": "^1.0.0",
-    "ractive": "^0.7.3",
-    "waitr": "0.0.8"
+    "ractive": "^0.7.3"
   },
   "devDependencies": {
     "brfs": "^1.4.0",
