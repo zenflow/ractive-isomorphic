@@ -1,3 +1,7 @@
+throw errors
+    if !(page instanceof Page)
+better way to use standard distribution Ractive plugins
+page outro before next page intro
 write readme.md
 publish to npm & deprecate ractive-express & tweet @ractivejs
 tests
