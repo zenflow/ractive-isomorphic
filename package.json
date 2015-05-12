@@ -37,7 +37,7 @@
     "obs-router": "0.0.7",
     "on-client": "^1.0.0",
     "ractive": "^0.7.3",
-    "waitr": "0.0.10"
+    "waitr": "0.0.11"
   },
   "devDependencies": {
     "brfs": "^1.4.0",
