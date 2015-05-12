@@ -1,12 +1,21 @@
+replace on_client with _.support.dom
+move stuff from initialise.js to options.js
+make lodash (& Ractive) [a] peer dependency(s)
+getFilteredData [function] option to be used with use_data_script
 throw errors
     if !(page instanceof Page)
 better way to use standard distribution Ractive plugins
-page outro before next page intro
+debug mode
+discover webpack compatability
+tests (self & site)
+test in some other browsers (android, safari)
 write readme.md
 publish to npm & deprecate ractive-express & tweet @ractivejs
-tests
-test in some other browsers (android, safari)
+
+page outro before next page intro?
 add Website.koa()
 two separate waitrs? - one for whole vm readiness, one for route readiness?
 support 302 redirects
 manage page transitions
+improve (on client) error logging in onrouteerror
+    get sourcemaps somehow and map error stacks with 'stack-mapper' package
