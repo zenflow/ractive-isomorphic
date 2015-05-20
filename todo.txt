@@ -1,4 +1,8 @@
+update router
+proxy router methods to site
+enable wrapping api /w waitr
 replace on_client with _.support.dom
+move "_static.client = function(params){...}" -> Site
 move stuff from initialise.js to options.js
 make lodash (& Ractive) [a] peer dependency(s)
 getFilteredData [function] option to be used with use_data_script
@@ -7,8 +11,8 @@ throw errors
 better way to use standard distribution Ractive plugins
 debug mode
 discover webpack compatability
-tests (self & site)
-test in some other browsers (android, safari)
+tests
+    server- & client-side https://ci.testling.com/
 write readme.md
 publish to npm & deprecate ractive-express & tweet @ractivejs
 
