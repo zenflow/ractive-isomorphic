@@ -22,7 +22,7 @@ var HalfInput = Page.extend({
 	oninit: function(){
 		var self = this;
 		self._super.apply(self, arguments);
-		if (self.on_client){
+		if (self._.support.dom){
 			self.on('input-change', function(event){
 				var number = Number(event.node.value);
 				if (self._.isNaN(number)){return;}

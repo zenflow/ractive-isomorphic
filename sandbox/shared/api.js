@@ -1,7 +1,6 @@
 var Promise = require('../../lib').Promise;
 var _ = require('lodash');
-var on_client = require('on-client');
-var _delay = on_client ? 500 : 10;
+var _delay = _.support.dom ? 500 : 10;
 module.exports = {
 	getDelay: function(){
 		return _delay;

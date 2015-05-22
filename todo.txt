@@ -1,10 +1,9 @@
+make lodash (& Ractive) [a] peer dependency(s)
 update router
 proxy router methods to site
 enable wrapping api /w waitr
-replace on_client with _.support.dom
 move "_static.client = function(params){...}" -> Site
 move stuff from initialise.js to options.js
-make lodash (& Ractive) [a] peer dependency(s)
 getFilteredData [function] option to be used with use_data_script
 throw errors
     if !(page instanceof Page)
@@ -13,8 +12,6 @@ debug mode
 discover webpack compatability
 tests
     server- & client-side https://ci.testling.com/
-write readme.md
-publish to npm & deprecate ractive-express & tweet @ractivejs
 
 page outro before next page intro?
 add Website.koa()
@@ -23,3 +20,6 @@ support 302 redirects
 manage page transitions
 improve (on client) error logging in onrouteerror
     get sourcemaps somehow and map error stacks with 'stack-mapper' package
+
+write readme.md
+publish to npm & deprecate ractive-express & tweet @ractivejs

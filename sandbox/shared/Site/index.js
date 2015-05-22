@@ -29,7 +29,7 @@ var Site = ri.Site.extend({
 	oninit: function(){
 		var self = this;
 		self._super.apply(self, arguments);
-		if(self.on_client) {
+		if(ri._.support.dom) {
 			// api delay input
 			self.set('delay', self.api.getDelay());
 			self.observe('delay', function (delay) {
