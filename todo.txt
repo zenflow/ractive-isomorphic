@@ -1,21 +1,24 @@
-update router
-proxy router methods to site
-enable wrapping api /w waitr
-move stuff from initialise.js to options.js
+get rid of toggleTransitions.js
 getFilteredData [function] option to be used with use_data_script
+move stuff from initialise.js to options.js
 throw errors
-    if !(page instanceof Page)
-better way to use standard distribution Ractive plugins
+    if !(page instanceof Page) || !pages.length
+get rid of ractive feature requests
+    - filterOptions
+    - static class members
+    - let onconstruct manage construction by calling this._super
+
 debug mode
-discover webpack compatability
 tests
     server- & client-side https://ci.testling.com/
-
-page outro before next page intro?
+update router
+proxy router methods to site
+wrapping api /w waitr
+better way to use standard distribution Ractive plugins
+discover webpack compatability
+manage page transitions - page outro before next page intro?
 add Website.koa()
-two separate waitrs? - one for whole vm readiness, one for route readiness?
 support 302 redirects
-manage page transitions
 improve (on client) error logging in onrouteerror
     get sourcemaps somehow and map error stacks with 'stack-mapper' package
 
