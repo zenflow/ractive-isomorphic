@@ -1,7 +1,6 @@
 update router
 proxy router methods to site
 enable wrapping api /w waitr
-move "_static.client = function(params){...}" -> Site
 move stuff from initialise.js to options.js
 getFilteredData [function] option to be used with use_data_script
 throw errors
