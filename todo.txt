@@ -1,4 +1,3 @@
-make lodash (& Ractive) [a] peer dependency(s)
 update router
 proxy router methods to site
 enable wrapping api /w waitr

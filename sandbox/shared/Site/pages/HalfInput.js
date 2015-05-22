@@ -1,3 +1,4 @@
+var _ = require('lodash');
 var fs = require('fs');
 var path = require('path');
 var Page = require('./Page');
@@ -22,11 +23,11 @@ var HalfInput = Page.extend({
 	oninit: function(){
 		var self = this;
 		self._super.apply(self, arguments);
-		if (self._.support.dom){
+		if (_.support.dom){
 			self.on('input-change', function(event){
 				var number = Number(event.node.value);
-				if (self._.isNaN(number)){return;}
-				self.router.setRoute(self.name, {number: number});
+				if (_.isNaN(number)){return;}
+				self.root.router.setRoute(self.name, {number: number});
 			});
 		}
 	}

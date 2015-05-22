@@ -1,3 +1,4 @@
+var _ = require('lodash');
 var fs = require('fs');
 var path = require('path');
 var ri = require('../../../lib');
@@ -29,7 +30,7 @@ var Site = ri.Site.extend({
 	oninit: function(){
 		var self = this;
 		self._super.apply(self, arguments);
-		if(ri._.support.dom) {
+		if(_.support.dom) {
 			// api delay input
 			self.set('delay', self.api.getDelay());
 			self.observe('delay', function (delay) {

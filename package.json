@@ -33,9 +33,7 @@
   },
   "homepage": "https://github.com/zenflow/ractive-isomorphic",
   "dependencies": {
-    "lodash": "^3.8.0",
     "obs-router": "0.0.7",
-    "ractive": "^0.7.3",
     "waitr": "0.0.11"
   },
   "devDependencies": {
@@ -51,5 +49,8 @@
     "vinyl-buffer": "^1.0.0",
     "vinyl-source-stream": "^1.1.0"
   },
-  "browser": {}
+  "peerDependencies": {
+    "ractive": "0.7.3",
+    "lodash": "^3.9.1"
+  }
 }
