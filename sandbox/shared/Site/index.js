@@ -1,4 +1,5 @@
 var _ = require('lodash');
+var Ractive = require('ractive');
 var fs = require('fs');
 var path = require('path');
 var ri = require('../../../lib');
@@ -8,7 +9,7 @@ var pages = require('./pages');
 var partials = require('./partials');
 
 // disable ractive debug messages in log
-ri.Ractive.DEBUG = false;
+Ractive.DEBUG = false;
 
 var Site = ri.Site.extend({
 	//use_data_script: false,
