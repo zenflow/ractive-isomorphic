@@ -1,21 +1,21 @@
-get rid of toggleTransitions.js
-throw errors
-    if !(page instanceof Page) || !pages.length
 move stuff from initialise.js to options.js
 
 getFilteredData [function] option to be used with use_data_script
-get rid of ractive feature requests
-    - filterOptions
-    - static class members
-    - let onconstruct manage construction by calling this._super
-
-debug mode
-hybrid server- & client-side tests
 
 update router, proxy router methods to site
 wrapping api /w waitr
 
-better way to use standard distribution Ractive plugins
+debug mode
+hybrid server- & client-side tests
+
+make ractive feature requests
+    - filterOptions
+    - static class members
+    - let onconstruct manage construction by calling this._super
+
+write readme.md
+publish to npm & deprecate ractive-express & tweet @ractivejs
+
 discover webpack compatability
 manage page transitions - page outro before next page intro?
 add Website.koa()
@@ -23,5 +23,3 @@ support 302 redirects
 improve (on client) error logging in onrouteerror
     get sourcemaps somehow and map error stacks with 'stack-mapper' package
 
-write readme.md
-publish to npm & deprecate ractive-express & tweet @ractivejs

@@ -1,5 +1,5 @@
-module.exports = {
-	Home: require('./Home'),
-	HalfInput: require('./HalfInput'),
-	RandomNumber: require('./RandomNumber')
-};
+module.exports = [
+	require('./Home'),
+	require('./HalfInput'),
+	require('./RandomNumber')
+];

@@ -1,7 +1,6 @@
 var gulp = require('gulp');
 var del = require('del');
 var _ = require('lodash');
-var package_json = require('./package.json');
 var browserify = require('browserify');
 var source = require('vinyl-source-stream');
 var buffer = require('vinyl-buffer');
