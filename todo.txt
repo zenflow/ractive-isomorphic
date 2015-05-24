@@ -1,7 +1,5 @@
 move stuff from initialise.js to options.js
 
-getFilteredData [function] option to be used with use_data_script
-
 update router, proxy router methods to site
 wrapping api /w waitr
 
