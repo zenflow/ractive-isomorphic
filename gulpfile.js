@@ -9,7 +9,7 @@ var sourcemaps = require('gulp-sourcemaps');
 var nodemon = require('gulp-nodemon');
 
 var browserify_transforms = ['brfs'];
-var browserify_node_modules = _.keys(package_json.dependencies); // all package dependancies for now
+var browserify_node_modules = ['lodash', 'ractive', 'obs-router', 'waitr', 'ractive-transitions-slide'];
 
 var cleaned = false;
 gulp.task('clean', function (done) {
