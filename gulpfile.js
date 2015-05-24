@@ -33,7 +33,6 @@ gulp.task('scripts:node_modules', ['clean'], function () {
 		.pipe(sourcemaps.write('./'))
 		.pipe(gulp.dest('./sandbox/client/build/scripts'))
 });
-
 gulp.task('scripts:index', ['clean'], function () {
 	var b = browserify('./sandbox/client/src/scripts/index.js', {debug: true})
 		.external(browserify_node_modules)
@@ -45,13 +44,18 @@ gulp.task('scripts:index', ['clean'], function () {
 		.pipe(sourcemaps.write('./'))
 		.pipe(gulp.dest('./sandbox/client/build/scripts'));
 });
-
 gulp.task('scripts', ['scripts:node_modules', 'scripts:index']);
 
-gulp.task('assets', ['clean'], function(){
+gulp.task('assets:logo', ['clean'], function() {
+	return gulp.src('./logo.svg')
+		.pipe(gulp.dest('./sandbox/client/build/images'));
+});
+gulp.task('assets:main', ['clean'], function(){
 	return gulp.src('./sandbox/client/src/assets/**')
 		.pipe(gulp.dest('./sandbox/client/build'));
 });
+gulp.task('assets', ['assets:logo', 'assets:main']);
+
 gulp.task('build', ['scripts', 'assets']);
 
 gulp.task('watch', ['build'], function() {
