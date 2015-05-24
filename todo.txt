@@ -1,19 +1,20 @@
 get rid of toggleTransitions.js
-getFilteredData [function] option to be used with use_data_script
-move stuff from initialise.js to options.js
 throw errors
     if !(page instanceof Page) || !pages.length
+move stuff from initialise.js to options.js
+
+getFilteredData [function] option to be used with use_data_script
 get rid of ractive feature requests
     - filterOptions
     - static class members
     - let onconstruct manage construction by calling this._super
 
 debug mode
-tests
-    server- & client-side https://ci.testling.com/
-update router
-proxy router methods to site
+hybrid server- & client-side tests
+
+update router, proxy router methods to site
 wrapping api /w waitr
+
 better way to use standard distribution Ractive plugins
 discover webpack compatability
 manage page transitions - page outro before next page intro?
