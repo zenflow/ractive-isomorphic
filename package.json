@@ -47,6 +47,7 @@
     "gulp-nodemon": "^2.0.3",
     "gulp-sourcemaps": "^1.5.2",
     "morgan": "^1.5.3",
+    "ractive-transitions-slide": "^0.2.1",
     "serve-static": "^1.9.3",
     "vinyl-buffer": "^1.0.0",
     "vinyl-source-stream": "^1.1.0"
