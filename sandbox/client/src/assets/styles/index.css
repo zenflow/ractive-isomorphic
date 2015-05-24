@@ -39,6 +39,18 @@ ul.navbar > li.active {
 ul.navbar > li.active > a {
     color: white;
 }
+.ri-pages {
+    border: 4px solid silver;
+    margin: 16px;
+    padding: 16px;
+    border-radius: 32px;
+}
+.ri-pages > .ri-page {
+    border: 4px solid gray;
+    margin: 16px;
+    padding: 16px;
+    border-radius: 16px;
+}
 img.loading {
     position: fixed;
     top: 24px;

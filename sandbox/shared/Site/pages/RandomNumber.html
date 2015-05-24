@@ -1,8 +1,10 @@
 <!-- reading directly from params.* keypath -->
-<h3>RandomNumber</h3>
-<p><strong>{{params.number}}</strong></p>
-<p style="visibility: {{next_number?'visible':'hidden'}}">
-    <a href="{{getUrl(route, {number: next_number})}}">
-        {{params.number?'again!':'get a random number...'}}
-    </a>
-</p>
+<div intro-outro="slide">
+    <h3>RandomNumber</h3>
+    <p><strong>{{params.number}}</strong></p>
+    <p style="visibility: {{next_number?'visible':'hidden'}}">
+        <a href="{{getUrl(route, {number: next_number})}}">
+            {{params.number?'again!':'get a random number...'}}
+        </a>
+    </p>
+</div>

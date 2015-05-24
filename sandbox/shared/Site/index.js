@@ -1,3 +1,4 @@
+var ractive_transitions_slide = require('ractive-transitions-slide');
 var _ = require('lodash');
 var Ractive = require('ractive');
 var fs = require('fs');
@@ -10,6 +11,7 @@ var partials = require('./partials');
 
 // disable ractive debug messages in log
 Ractive.DEBUG = false;
+Ractive.transitions.slide = ractive_transitions_slide;
 
 var Site = ri.Site.extend({
 	//use_data_script: false,
