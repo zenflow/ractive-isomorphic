@@ -1,5 +1,3 @@
-move stuff from initialise.js to options.js
-
 update router, proxy router methods to site
 wrapping api /w waitr
 
