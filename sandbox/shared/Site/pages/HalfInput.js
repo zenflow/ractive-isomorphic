@@ -16,8 +16,7 @@ var HalfInput = Page.extend({
 		self.root.set({title: self.name + ' / ' + self.root.get('title')});
 		return self.api.half(number).then(function(half) {
 			self.set({half: half});
-			throw new Error('fuck');
-			self.root.set({'status-code': 404}); // just sets the http "status-code" header
+			throw new Error('fake');
 		});
 	},
 	oninit: function(){
