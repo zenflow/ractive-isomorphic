@@ -1,5 +1,4 @@
 var ractive_transitions_slide = require('ractive-transitions-slide');
-var _ = require('lodash');
 var Ractive = require('ractive');
 var fs = require('fs');
 var path = require('path');
@@ -33,7 +32,7 @@ var Site = ri.Site.extend({
 	oninit: function(){
 		var self = this;
 		self._super.apply(self, arguments);
-		if(_.support.dom) {
+		if(process.browser) {
 			// api delay input
 			self.set('delay', self.api.getDelay());
 			self.observe('delay', function (delay) {
