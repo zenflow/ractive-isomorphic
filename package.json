@@ -3,6 +3,11 @@
   "version": "0.1.0",
   "description": "Extended version of Ractive for creating a website viewmodel and implementing it on both client and server.",
   "main": "lib/index.js",
+  "files": [
+    "lib",
+    "favicon.ico",
+    "README.md"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -19,6 +24,7 @@
     "client",
     "isomorphic",
     "view",
+    "model",
     "viewmodel",
     "view-model",
     "template",
@@ -34,7 +40,7 @@
   "homepage": "https://github.com/zenflow/ractive-isomorphic",
   "dependencies": {
     "middleware-flow": "^0.8.0",
-    "obs-router": "0.0.7",
+    "routeemitter": "0.1.0-rc2",
     "serve-favicon": "^2.2.1",
     "waitr": "0.0.11"
   },
@@ -53,7 +59,11 @@
     "vinyl-source-stream": "^1.1.0"
   },
   "peerDependencies": {
-    "ractive": "0.7.3",
-    "lodash": "^3.9.1"
+    "ractive": "^0.7.3",
+    "lodash": "^3.9.3"
+  },
+  "browser": {
+    "middleware-flow": false,
+    "serve-favicon": false
   }
 }

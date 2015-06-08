@@ -1,13 +1,13 @@
-update router, proxy router methods to site
-wrapping api /w waitr
-
-debug mode
-hybrid server- & client-side tests
-
-make ractive feature requests
+ractive
     - filterOptions
     - static class members
     - let onconstruct manage construction by calling this._super
+
+
+content-type header similar to statusCode
+throw error if Site is used as a component
+debug mode
+hybrid server- & client-side tests
 
 write readme.md
 set up slack and [slackin](https://github.com/rauchg/slackin)

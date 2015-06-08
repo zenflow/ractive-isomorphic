@@ -6,15 +6,15 @@ var template = fs.readFileSync(path.join(__dirname, 'HalfInput.html'), 'utf8');
 
 var HalfInput = Page.extend({
 	name: 'HalfInput',
-	url: '/half(/:number)',
+	url: 'half(/:number)',
 	template: template,
 	twoway: false,
-	onroute: function(params, is_initial){
+	onroute: function(route, is_initial){
 		var self = this;
-		var number = Number(params.number || 0);
+		var number = Number(route.params.number || 0);
 		self.set({number: number, half: '?'});
-		self.root.set({title: self.name + ' / ' + self.root.get('title')});
-		return self.api.half(number).then(function(half) {
+		self.parent.set({title: self.name + ' / ' + self.parent.get('title')});
+		self.api.half(number).then(function(half) {
 			self.set({half: half});
 			throw new Error('fake');
 		});
@@ -22,11 +22,12 @@ var HalfInput = Page.extend({
 	oninit: function(){
 		var self = this;
 		self._super.apply(self, arguments);
+		console.log('...')
 		if (process.browser){
 			self.on('input-change', function(event){
 				var number = Number(event.node.value);
 				if (_.isNaN(number)){return;}
-				self.root.router.setRoute(self.name, {number: number});
+				self.parent.router.replace(self.name, {number: number});
 			});
 		}
 	}

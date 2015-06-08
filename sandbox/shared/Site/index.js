@@ -27,7 +27,7 @@ var Site = ri.Site.extend({
 		self._super.apply(self, arguments);
 		self.on('ready', function(){console.log('Site ready');});
 		self.on('waiting', function(){console.log('Site waiting');});
-		self.on('route', function(route, params, is_initial) {console.log('Site route', route, params, is_initial);});
+		self.on('route', function(route, is_initial) {console.log('Site route', route, is_initial);});
 	},
 	oninit: function(){
 		var self = this;

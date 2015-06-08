@@ -1,16 +1,16 @@
 <ul class="navbar">
-    <li class="{{route=='Home'?'active':''}}">
-        <a href="{{getUrl('Home')}}">
+    <li class="{{route.name=='Home'?'active':''}}">
+        <a href="{{Route('Home', {}).url}}">
             Home
         </a>
     </li>
-    <li class="{{route=='HalfInput'?'active':''}}">
-        <a href="{{getUrl('HalfInput')}}">
+    <li class="{{route.name=='HalfInput'?'active':''}}">
+        <a href="{{Route('HalfInput', {}).url}}">
             HalfInput
         </a>
     </li>
-    <li class="{{route=='RandomNumber'?'active':''}}">
-        <a href="{{getUrl('RandomNumber')}}">
+    <li class="{{route.name=='RandomNumber'?'active':''}}">
+        <a href="{{Route('RandomNumber', {}).url}}">
             RandomNumber
         </a>
     </li>

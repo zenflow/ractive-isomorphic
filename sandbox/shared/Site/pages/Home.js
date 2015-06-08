@@ -5,7 +5,7 @@ var template = fs.readFileSync(path.join(__dirname, 'Home.html'), 'utf8');
 
 var Home = Page.extend({
 	name: 'Home',
-	url: '/',
+	url: '',
 	template: template
 });
 

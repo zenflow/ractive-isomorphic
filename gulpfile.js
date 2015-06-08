@@ -8,7 +8,7 @@ var sourcemaps = require('gulp-sourcemaps');
 var nodemon = require('gulp-nodemon');
 
 var browserify_transforms = ['brfs'];
-var browserify_node_modules = ['lodash', 'ractive', 'obs-router', 'waitr', 'ractive-transitions-slide'];
+var browserify_node_modules = ['lodash', 'ractive', 'routeemitter', 'waitr', 'ractive-transitions-slide'];
 
 var cleaned = false;
 gulp.task('clean', function (done) {
