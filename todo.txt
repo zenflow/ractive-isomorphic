@@ -10,12 +10,14 @@ make ractive feature requests
     - let onconstruct manage construction by calling this._super
 
 write readme.md
+set up slack and [slackin](https://github.com/rauchg/slackin)
 publish to npm & deprecate ractive-express & tweet @ractivejs
 
 discover webpack compatability
 manage page transitions - page outro before next page intro?
 add Website.koa()
 support 302 redirects
+separate get and post routes, support interaction on javascript-disabled clients forms
 improve (on client) error logging in onrouteerror
     get sourcemaps somehow and map error stacks with 'stack-mapper' package
 
