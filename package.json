@@ -32,7 +32,10 @@
     "binding",
     "seo"
   ],
-  "author": "Matthew Francis Brunetti",
+  "author": {
+    "name": "Matthew Francis Brunetti",
+    "email": "zenflow87@gmail.com"
+  },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/zenflow/ractive-isomorphic/issues"
