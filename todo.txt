@@ -1,12 +1,9 @@
-debug mode
-
 ractive
     - filterOptions
     - static class members
-    - let onconstruct manage construction by calling this._super
-
-
-hybrid server- & client-side tests
+    
+package tests/
+hybrid server- & client-side test harness for `Site`s
 
 write readme.md
 set up slack and [slackin](https://github.com/rauchg/slackin)

@@ -8,11 +8,11 @@ var bodyTemplate = fs.readFileSync(path.join(__dirname, 'body.html'), 'utf8');
 var pages = require('./pages');
 var partials = require('./partials');
 
-// disable ractive debug messages in log
 Ractive.DEBUG = false;
 Ractive.transitions.slide = ractive_transitions_slide;
 
 var Site = ri.Site.extend({
+	//debug: 1,
 	//useDataScript: false,
 	//baseUrl: '/yay/',
 	documentTemplate: documentTemplate,
