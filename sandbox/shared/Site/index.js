@@ -12,7 +12,7 @@ Ractive.DEBUG = false;
 Ractive.transitions.slide = ractive_transitions_slide;
 
 var Site = ri.Site.extend({
-	//debug: 1,
+	debug: 1,
 	//useDataScript: false,
 	//baseUrl: '/yay/',
 	documentTemplate: documentTemplate,
