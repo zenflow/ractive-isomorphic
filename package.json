@@ -40,7 +40,7 @@
   "homepage": "https://github.com/zenflow/ractive-isomorphic",
   "dependencies": {
     "middleware-flow": "^0.8.0",
-    "routeemitter": "0.1.0-rc2",
+    "routeemitter": "0.1.0-rc3",
     "serve-favicon": "^2.2.1",
     "waitr": "0.0.11"
   },
