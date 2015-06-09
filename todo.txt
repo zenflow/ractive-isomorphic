@@ -1,4 +1,4 @@
-content-type header similar to statusCode
+http headers
 mountPath
 throw error if Site is used as a component, fix up errors nice
 debug mode
@@ -15,11 +15,11 @@ write readme.md
 set up slack and [slackin](https://github.com/rauchg/slackin)
 publish to npm & deprecate ractive-express & tweet @ractivejs
 
-discover webpack compatability
+cookies
+webpack compatability
 manage page transitions - page outro before next page intro?
-add Website.koa()
+add Site#koa()
 support 302 redirects
 separate get and post routes, support interaction on javascript-disabled clients forms
 improve (on client) error logging in onrouteerror
-    get sourcemaps somehow and map error stacks with 'stack-mapper' package
-
+    map stack trace to source locations  ('stack-mapper' package)
