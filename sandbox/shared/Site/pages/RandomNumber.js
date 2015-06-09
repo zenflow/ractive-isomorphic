@@ -7,14 +7,12 @@ var RandomNumber = Page.extend({
 	name: 'RandomNumber',
 	url: 'random(/:number)',
 	template: template,
-	oninit: function(){
+	onroute: function(){
 		var self = this;
 		self.set({next_number: null});
-		self.parent.set({title: self.name + ' / ' + self.parent.get('title')});
-		self.observe('route', function(route){
-			self.api.random(1, 100).then(function(number){
-				self.set({next_number: number});
-			});
+		return self.api.random(1, 100).then(function(number){
+			self.set({next_number: number});
+			throw new Error('fake')
 		});
 	}
 });

@@ -9,16 +9,17 @@ var HalfInput = Page.extend({
 	url: 'half(/:number)',
 	template: template,
 	twoway: false,
+	onroute: function(route, is_initial){
+		var self = this;
+		var number = Number(route.params.number || 0);
+		self.set({number: number, half: '?'});
+		self.api.half(number).then(function(half) {
+			self.set({half: half});
+		});
+	},
 	oninit: function(){
 		var self = this;
-		self.observe('route', function(route){
-			var number = Number(route.params.number || 0);
-			self.set({number: number, half: '?'});
-			self.parent.set({title: self.name + ' / ' + self.parent.get('title')});
-			self.api.half(number).then(function(half) {
-				self.set({half: half});
-			});
-		});
+		self._super.apply(self, arguments);
 		if (process.browser){
 			self.on('input-change', function(event){
 				var number = Number(event.node.value);

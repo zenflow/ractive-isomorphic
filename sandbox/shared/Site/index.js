@@ -19,8 +19,11 @@ var Site = ri.Site.extend({
 	pages: pages,
 	partials: partials,
 	data: {
-		loading_opacity: 0,
-		title: 'ractive-isomorphic sandbox'
+		loading_opacity: 0
+	},
+	onroute: function(route){
+		var self = this;
+		self.set('title', route.name + ' / ractive-isomorphic sandbox');
 	},
 	oninit: function(){
 		var self = this;
