@@ -46,7 +46,8 @@
     "middleware-flow": "^0.8.0",
     "routeemitter": "0.1.0-rc3",
     "serve-favicon": "^2.2.1",
-    "waitr": "0.0.11"
+    "waitr": "0.0.11",
+    "wrap-ractive": "https://github.com/zenflow/wrap-ractive/tarball/v1.0.0"
   },
   "devDependencies": {
     "brfs": "^1.4.0",
