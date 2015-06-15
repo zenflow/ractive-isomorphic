@@ -1,15 +1,12 @@
-ractive
-    - filterOptions
-    - static class members
-    
-package tests/
-hybrid server- & client-side test harness for `Site`s
-
 write readme.md
-set up slack and [slackin](https://github.com/rauchg/slackin)
-publish to npm & deprecate ractive-express & tweet @ractivejs
-yo generator
+    set up slack and [slackin](https://github.com/rauchg/slackin)
+some unit tests
+submit issue in ractive repo
+continue ractive-isomorphic-demo
 
+publish to npm & deprecate ractive-express & tweet @ractivejs
+hybrid server- & client-side test harness for user-made `Site`s and `Page`s
+yo generator
 cookies
 webpack compatability
 manage page transitions - page outro before next page intro?
