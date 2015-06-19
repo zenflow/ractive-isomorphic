@@ -1,7 +1,6 @@
 write readme.md
-    set up slack and [slackin](https://github.com/rauchg/slackin)
+submit PR in Ractive repo
 some unit tests
-submit issue in ractive repo
 continue ractive-isomorphic-demo
 
 publish to npm & deprecate ractive-express & tweet @ractivejs
