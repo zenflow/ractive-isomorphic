@@ -1,7 +1,7 @@
 {
   "name": "ractive-isomorphic",
   "version": "0.1.0",
-  "description": "Extended version of Ractive for creating a website viewmodel and implementing it on both client and server.",
+  "description": "Isomorphic abstract `Ractive` classes, `Site` and `Page`, with `connect` middleware factory",
   "main": "lib/index.js",
   "files": [
     "lib",
@@ -17,20 +17,30 @@
     "url": "https://github.com/zenflow/ractive-isomorphic"
   },
   "keywords": [
+    "isomorphic",
+    "abstract",
     "ractive",
     "ractivejs",
-    "express",
+    "class",
+    "classes",
+    "component",
+    "components",
+    "ractive-components",
+    "site",
+    "website",
+    "page",
     "connect",
+    "express",
+    "middleware",
+    "connect-middleware",
     "server",
     "client",
-    "isomorphic",
     "view",
     "model",
     "viewmodel",
     "view-model",
     "template",
     "rendering",
-    "binding",
     "seo"
   ],
   "author": {
@@ -43,11 +53,12 @@
   },
   "homepage": "https://github.com/zenflow/ractive-isomorphic",
   "dependencies": {
+    "lodash": "^3.9.3",
     "middleware-flow": "^0.8.0",
+    "ractive": "https://github.com/zenflow/ractive/tarball/build",
     "routeemitter": "0.1.0-rc3",
     "serve-favicon": "^2.2.1",
-    "waitr": "0.0.11",
-    "wrap-ractive": "https://github.com/zenflow/wrap-ractive/tarball/v1.0.0"
+    "waitr": "0.0.11"
   },
   "devDependencies": {
     "brfs": "^1.4.0",
@@ -63,12 +74,10 @@
     "vinyl-buffer": "^1.0.0",
     "vinyl-source-stream": "^1.1.0"
   },
-  "peerDependencies": {
-    "ractive": "^0.7.3",
-    "lodash": "^3.9.3"
-  },
+  "peerDependencies": {},
   "browser": {
     "middleware-flow": false,
-    "serve-favicon": false
+    "serve-favicon": false,
+    "./lib/Site/staticMethods/connect": false
   }
 }

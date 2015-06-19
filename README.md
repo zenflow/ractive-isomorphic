@@ -1,5 +1,5 @@
 # ractive-isomorphic
-Extended version of Ractive for creating a website viewmodel and implementing it on both client and server.
+Isomorphic abstract `Ractive` classes, `Site` and `Page`, with `connect` middleware factory 
 
 [![dependencies](https://david-dm.org/zenflow/ractive-isomorphic.svg)](https://david-dm.org/zenflow/ractive-isomorphic)
 [![dev-dependencies](https://david-dm.org/zenflow/ractive-isomorphic/dev-status.svg)](https://david-dm.org/zenflow/ractive-isomorphic#info=devDependencies)
@@ -16,16 +16,18 @@ TODO
 ## Installing
 
 ```
-npm install --save lodash ractive ractive-isomorphic
+npm install --save ractive-isomorphic
 ```
-
-`lodash` and `ractive` packages are peer dependencies of `ractive-isomorphic`
 
 ## Getting help
 
 * /\*Official Documentation\*/
 * [Gitter](https://gitter.im/zenflow/ractive-isomorphic)
 * [@zenflow87 on Twitter](http://twitter.com/zenflow87)
+
+## Developing and building
+
+TODO
 
 ## Contributing
 
