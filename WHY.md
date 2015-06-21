@@ -1,16 +1,15 @@
 # Why?
 
-I wanted a full-stack reusable code-base for web-apps that are two things:
+I wanted a full-stack reusable codebase for web-apps that are two things:
 
 ## 1. isomorphic
----
 
-"isomorphic" meaning (in the context of javascript) [code] capable of running on both the browser and the server, and 
+"isomorphic" (in the context of javascript) means capable of running on both the browser and the server, and 
 sometimes also implies adjusting it's behavior according to which environment it's being run in.
 
 Check out [nerds.airbnb.com/isomorphic-javascript-future-web-apps](http://nerds.airbnb.com/isomorphic-javascript-future-web-apps)
 
-Note that if javascript isn't your thing, your thing will compile to javascript.
+Note that if javascript isn't your thing, [your thing will probably compile to javascript](https://github.com/jashkenas/coffeescript/wiki/List-of-languages-that-compile-to-JS).
 
 Isomorphic web apps are becoming more and more popular, and I predict they will represent a new standard of quality 
 in the future (despite whether or not the term "isomorphic" is largely adopted), similar to how I imagine front-end 
@@ -36,8 +35,7 @@ first page-load experience of server-side rendering and the subsequent page-load
 Content rendered client-side-only is not indexed by search engines, and is therefore incapable of Search Engine 
 Optimisation based on that content.	
 
-## 2. fast, easy and fun, to build and work on
----
+## 2. fast, easy and fun to build and work on
 
 Ideally, as much so as Ractive.
 

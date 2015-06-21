@@ -1,16 +1,15 @@
-write readme.md
-submit PR in Ractive repo
-some unit tests
+unit tests
+end-to-end test harness for `Site`s and `Page`s
+support redirects
+cookies & sessions
+GET & POST / graceful degradation support for js-disabled browsers
 continue ractive-isomorphic-demo
 
 publish to npm & deprecate ractive-express & tweet @ractivejs
-hybrid server- & client-side test harness for user-made `Site`s and `Page`s
+
 yo generator
-cookies
+Site#koa()
 webpack compatability
-manage page transitions - page outro before next page intro?
-add Site#koa()
-support 302 redirects
-separate get and post routes, support interaction on javascript-disabled clients forms
-improve (on client) error logging in onrouteerror
+improve error logging in onrouteerror  (on client)
     map stack trace to source locations  ('stack-mapper' package)
+manage page transitions - page outro before next page intro?

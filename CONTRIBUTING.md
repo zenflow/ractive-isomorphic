@@ -3,8 +3,10 @@
 ## Getting help
 
 There are a couple ways to get help before submitting an issue:
-* /\*Official Documentation\*/
-* [Gitter](https://gitter.im/zenflow/ractive-isomorphic)
+
+* ractive-isomorphic Documentation
+* [Ractive Documentation](http://docs.ractivejs.org/)
+* [zenflow/ractive-isomorphic on Gitter](https://gitter.im/zenflow/ractive-isomorphic)
 * [@zenflow87 on Twitter](http://twitter.com/zenflow87)
 
 ## Raising security issues

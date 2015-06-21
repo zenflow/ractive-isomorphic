@@ -1,7 +1,7 @@
 {
   "name": "ractive-isomorphic",
   "version": "0.1.0",
-  "description": "Isomorphic abstract `Ractive` classes, `Site` and `Page`, with `connect` middleware factory",
+  "description": "Isomorphic abstract classes, `Site` and `Page`, derived from `Ractive`",
   "main": "lib/index.js",
   "files": [
     "lib",
