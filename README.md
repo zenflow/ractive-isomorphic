@@ -26,15 +26,16 @@ most pleasurable-to-work-with UI library for the web that I have ever loved. <3
 ## Example
 
 For now, you can check out the [sandbox app](https://github.com/zenflow/ractive-isomorphic/tree/master/sandbox).
-See the *Developing ri* section for instructions on how to get it running.
+
+See the [Developing ri](#developing-ri) section for instructions on how to get it running.
 
 (Various advanced examples will be added to an examples folder, soonish.)
 
 ## Installing
 
-### 1. `npm install --save https://github.com/zenflow/ractive-isomorphic/tarball/master`
+#### 1. `npm install --save https://github.com/zenflow/ractive-isomorphic/tarball/master`
 
-### 2. Extend `ri.Site` into `MySite`: the isomorphic blue-prints for your app
+#### 2. Extend `ri.Site` into `MySite`: the isomorphic blue-prints for your app
 
 A minimal example might look like this:
 
@@ -56,7 +57,7 @@ module.exports = MySite;
 
 ```
 
-### 3. Use middleware returned by `MySite.connect(options)` with [connect](https://github.com/senchalabs/connect) or [express](https://github.com/strongloop/express) HTTP server frameworks
+#### 3. Use middleware returned by `MySite.connect(options)` with [connect](https://github.com/senchalabs/connect) or [express](https://github.com/strongloop/express) HTTP server frameworks
 
 An entry-point for your server-side code may look something like this:
 
@@ -73,7 +74,7 @@ app.use(serveStatic(path.join(__dirname, '../client/build')));
 http.createServer(app).listen(3000);
 ```
 
-### 4. [browserify](https://github.com/substack/browserify) and serve the isomorphic and client-side-only portions of your codebase. 
+#### 4. [browserify](https://github.com/substack/browserify) and serve the isomorphic and client-side-only portions of your codebase. 
 
 ri itself currently uses [gulp](https://github.com/gulpjs/gulp) (task-runner) for building the "sandbox" app, but 
 any build system that supports or includes browserification will work just fine.

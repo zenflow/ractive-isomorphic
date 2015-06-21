@@ -1,4 +1,4 @@
-# Why?
+# Why did I make this?
 
 I wanted a full-stack reusable codebase for web-apps that are two things:
 
@@ -17,7 +17,7 @@ development represented a new standard of quality when web apps only ran on serv
 
 The key benefits of isomorphic rendering of entire websites:
 	
-### (a) better User eXperience. 
+#### (a) better User eXperience. 
 
 The first page appears in traditional server-rendered time. CSS and [initial] HTML are loaded first, allowing 
 the user to begin using (i.e. looking, reading, navigating) while the client app, including javascript and other 
@@ -30,7 +30,7 @@ require a round-trip.)
 Thus applications of this nature offer the user the best of both server- and client- rendering -focused apps: the 
 first page-load experience of server-side rendering and the subsequent page-load experience of client-side rendering.
 
-### (b) googleability 
+#### (b) googleability 
 
 Content rendered client-side-only is not indexed by search engines, and is therefore incapable of Search Engine 
 Optimisation based on that content.	
